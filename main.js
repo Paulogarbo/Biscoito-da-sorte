@@ -21,6 +21,7 @@ const lucks = [
   "A felicidade é uma jornada, não um destino."
 ];
 
+const main = document.querySelector("main")
 const screen1 = document.querySelector('.screen1')
 const screen2 = document.querySelector('.screen2')
 const btnOpen = document.querySelector("#btn-open")
@@ -48,4 +49,5 @@ function mensageRandom() {
 function toggleScreen() {
   screen1.classList.toggle("hide")
   screen2.classList.toggle("hide")
+  main.classList.toggle("main-animation")
 }

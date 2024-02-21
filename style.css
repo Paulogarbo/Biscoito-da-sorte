@@ -93,6 +93,14 @@ img {
   width: max-content;
 }
 
+.main-animation {
+  animation: jump 600ms linear forwards;
+}
+
+.buh-animation {
+  animation: move 600ms linear forwards;
+}
+
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
@@ -103,4 +111,27 @@ img {
 	100% {
 		background-position: 0% 50%;
 	}
+}
+
+@keyframes jump {
+  0% {
+    transform: translateX(10%);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateX(-10%);
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(5%);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateY(-5%);
+  }
+
 }
